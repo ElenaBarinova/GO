@@ -1,0 +1,42 @@
+.present__caption {
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 150px;
+  text-transform: uppercase;
+  letter-spacing: -0.1em;
+  display: inline-block;
+
+
+}
+
+.present__container {
+  height: 823px;
+  position: relative;
+
+}
+
+/*.present__container_bg {
+  background-image: url("../img2/caption.png");
+  background-repeat: no-repeat;
+  background-position: 675px 61px ;
+  background-size: 675px 762px;
+} */
+
+.present__subtitle {
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 100px;
+  display: inline-block;
+}
+
+.present__container:after {
+  content: "";
+  width:675px ;
+  height:762px;
+  background-image: url("/img2/caption.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  bottom: 1px;
+  right: 130px;
+}
