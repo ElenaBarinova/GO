@@ -21,6 +21,7 @@
   position: relative;
   text-align: center;
   float: left;
+  display: flex;
 }
 
 .halls__item:nth-child(2n) {
@@ -28,10 +29,7 @@
 }
 
 .halls__name {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+  margin: auto;
 
 
 }
