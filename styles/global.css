@@ -61,8 +61,13 @@ fieldset {
   margin: 0;
 }
 
-iframe {
+iframe,
+fieldset {
   border: none;
+}
+
+fieldset {
+  padding: 0;
 }
 
 .visually-hidden {

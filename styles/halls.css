@@ -26,11 +26,13 @@
   line-height: 80px;
   text-transform: uppercase;
   display: flex;
+  text-align: center;
 
 }
 
 
 .halls__name {
+  width: 50%;
   margin: auto;
 }
 

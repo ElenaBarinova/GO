@@ -1,3 +1,6 @@
+.footer {
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
 .contact__caption {
   font-weight: 700;
   font-size: 40px;
@@ -47,4 +50,24 @@
 
 .social__item:last-child {
   margin-right: 0;
+}
+
+.contact__flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+.footer__container_width {
+  max-width: 328px;
+}
+
+.footer__flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
 }

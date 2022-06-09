@@ -1,12 +1,161 @@
 .container_bgc {
   background: #440F51;
+  padding-top:80px ;
+  padding-bottom: 80px;
 }
+
 .booking__caption {
   font-weight: 700;
   font-size: 40px;
   text-align: center;
   line-height: 50px;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
+.form__legend {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__fieldset {
+  margin-bottom: 60px;
+}
+/*Выбери зал*/
+.fieldset-hall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fieldset-hall__label {
+  width: 250px;
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 7px 15px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.fieldset-hall__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-left: -5px;
+}
+
+/*Набор развлечений*/
+.fun {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 100px;
+
+}
+
+.fun__legend {
+  margin-bottom: 23px;
+  text-align: left;
+}
+
+.fun__fieldset {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1ex;
+  justify-content: flex-start;
+}
+.fun__label {
+  display: block;
+  position: relative;
+  margin-left: 37px
+
+}
+.fun__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+}
+
+.fun__input:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 1px;
+  left: -37px;
+}
+
+
+.fun__input-checkbox:before {
+  width: 24px;
+  height: 24px;
+}
+
+.fun__input-radio:before {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+
+/* Дата и время*/
+
+.reserving {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 100px;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.reserving__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserving__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.reserving__input {
+  width: 300px;
+  height: 52px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form__btn {
+  align-self: flex-end;
+  width: 300px;
+  padding: 16px 50px;
+  border-radius: 10px;
+  background:#FFFFFF;
+  border:0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6C0287;
+}

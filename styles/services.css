@@ -14,20 +14,20 @@
   flex-wrap: wrap;
   gap: 40px 20px;
 
-
-
 }
 
-.services__name {
-  font-weight: 700;
-
-}
 
 .services__item {
   width: 380px;
   height: 228px;
   padding-left: 40px;
+  display: flex;
+  align-items: flex-end;
 
+}
+
+.services__name {
+  font-weight: 700;
 }
 
 .services__item-option-1 {
