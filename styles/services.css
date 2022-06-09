@@ -5,17 +5,28 @@
   line-height: 50px;
   text-transform: uppercase;
   margin-bottom: 60px;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+
 
 
 }
 
 .services__name {
+  font-weight: 700;
 
 }
 
 .services__item {
-  max-width: 380px;
+  width: 380px;
   height: 228px;
+  padding-left: 40px;
 
 }
 

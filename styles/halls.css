@@ -7,10 +7,17 @@
   margin-bottom: 60px;
 }
 
+.halls__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .halls__item {
   height: 349px;
   min-width: 580px;
-  margin-bottom:20px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,23 +25,13 @@
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
-  position: relative;
-  text-align: center;
-  float: left;
   display: flex;
+
 }
 
-.halls__item:nth-child(2n) {
-  float: right;
-}
 
 .halls__name {
   margin: auto;
-
-
-}
-.halls__item:nth-last-child(-n+2) {
-  margin-bottom: 0;
 }
 
 

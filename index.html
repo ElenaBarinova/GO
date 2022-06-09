@@ -15,7 +15,7 @@
     <header class="header">
       <div class="container container_flexbox">
         <div class="logo">
-          <img src="img/logo.svg" alt="логитип Go" class="logo__img">
+          <img src="img/logo.svg" alt="логитип Go" class="logo__img" height="38">
         </div>
 
         <nav class="navigation">
@@ -38,10 +38,9 @@
           </ul>
         </nav>
 
-        <form action="" class="call">
-            <button class="call__button" type="button">Заказать звонок</button>
-        </form>
-
+        <div class="call">
+            <a href="#" class="call__link" >Заказать звонок</a>
+        </div>
 
       </div>
     </header>
@@ -49,43 +48,36 @@
 
     <main class="main">
       <section class="present">
-        <div class="container  present__container present__container_bg">
+        <div class="container  present__container ">
           <h1 lang="en" class="present__caption">
             game over
           </h1>
           <p class="present__subtitle">
             Новый формат игр и отдыха
           </p>
+
+          <div class="present__box">
+
+            <ul class="present__list">
+              <li class="present__item present__item-hall">
+                <p class="present__subject">4</p>
+                <p class="present__text">Тематических зала</p>
+              </li>
+              <li class="present__item present__item-new">
+                <p class="present__subject">new</p>
+                <p class="present__text">Новейшая аппаратура</p>
+              </li>
+            </ul>
+
+            <div class="present__booking">
+              <a href="#booking" class="present__link">Забронировать</a>
+            </div>
+          </div>
+
         </div>
       </section>
 
-        <!--<section class="navigation" id="menu">
-          <div class="container">
-            <h2 class="navigation__caption">
-              Меню
-            </h2>
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a href="#halls" class="navigation__link">Залы</a>
-              </li>
-              <li class="navigation__item">
-                <a href="#about_us" class="navigation__link">О нас</a>
-              </li>
-              <li class="navigation__item">
-                <a href="#booking" class="navigation__link">Бронь</a>
-              </li>
-              <li class="navigation__item">
-                <a href="#reviews" class="navigation__link">Отзывы</a>
-              </li>
-              <li class="navigation__item">
-                <a href="#questions" class="navigation__link">Частые вопросы</a>
-              </li>
-              <li>
-                <a href="#contacts" class="navigation__link">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </section> -->
+
 
         <section class="services" id="services">
           <div class="container">
@@ -133,7 +125,7 @@
             <h2 class="halls__caption">
               Наши залы
             </h2>
-            <ol class="halls__list clearfix">
+            <ol class="halls__list">
                 <li class="halls__item halls__item-80vibes" lang="en">
                   <p class="halls__name halls__name-item-80vibes">
                     80's vibes
@@ -159,7 +151,7 @@
         </section>
 
         <section class="booking" id="booking">
-          <div class="container">
+          <div class="container container_bgc">
             <h2 class="booking__caption">
               Забронировать зал просто
             </h2>
