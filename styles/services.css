@@ -22,9 +22,10 @@
   height: 228px;
   padding-left: 40px;
   display: flex;
-  align-items: flex-end;
-
+  align-items: baseline;
+  flex-direction: column-reverse;
 }
+
 
 .services__name {
   font-weight: 700;

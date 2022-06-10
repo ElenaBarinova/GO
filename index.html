@@ -13,9 +13,9 @@
   <body>
 
     <header class="header">
-      <div class="container container_flexbox">
-        <div class="logo">
-          <img src="img/logo.svg" alt="логитип Go" class="logo__img" height="38">
+      <div class="container header__container">
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="логитип Go" class="header__img" height="38">
         </div>
 
         <nav class="navigation">
@@ -38,9 +38,8 @@
           </ul>
         </nav>
 
-        <div class="call">
-            <a href="#" class="call__link" >Заказать звонок</a>
-        </div>
+        <a href="#" class="call__link" >Заказать звонок</a>
+
 
       </div>
     </header>
@@ -235,20 +234,30 @@
 
               <fieldset class="form__fieldset reserving">
                 <legend class="form__legend" >Выбери дату и время</legend>
-                <div class="reserving__box reserving__box-time">
+
+                <div class="reserving__box">
+                  <label class="reserving__label">
+                    Дата <input class="reserving__input reserving__date" type="date" name="date" required>
+                  </label>
+
+                  <label class="reserving__label">
+                    Время <input  class="reserving__input reserving__time" type="time" name="time" required >
+                  </label>
+                </div>
+
                   <label class="reserving__label">
                     Дата <input class="reserving__input" type="date" name="date" required>
                   </label>
+
                   <label class="reserving__label">
                     Время <input  class="reserving__input" type="time" name="time" required >
                   </label>
 
                   <label class="reserving__label">
                     Количество человек <input class="reserving__input" type="number"
-                                              name="persons" required min="1" max="30"> </label>
-                </div>
+                                              name="persons" required min="1" max="30">
+                  </label>
 
-                <div class="reserving__box reserving__box-name">
                   <label class="reserving__label">
                     Имя <input class="reserving__input" type="text" name="name" required>
                   </label>
@@ -256,9 +265,7 @@
                   <label class="reserving__label">
                     Фамилия <input class="reserving__input" type="text" name="surname" required>
                   </label>
-                </div>
 
-                <div class="reserving__box reserving__box-contact">
                   <label class="reserving__label">
                     Номер телефона <input class="reserving__input" type="tel" name="tel" required>
                   </label>
@@ -266,7 +273,7 @@
                   <label class="reserving__label">
                     E-mail <input class="reserving__input" type="email" name="mail" required>
                   </label>
-                </div>
+
 
               </fieldset>
 
