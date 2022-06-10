@@ -14,32 +14,32 @@
 
     <header class="header">
       <div class="container header__container">
+
         <div class="header__logo">
-          <img src="img/logo.svg" alt="логитип Go" class="header__img" height="38">
+          <img class="header__logo-img" src="img/logo.svg" alt="логитип Go"  height="38">
         </div>
 
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#halls" class="navigation__link"><p>Залы</p></a>
+              <a class="navigation__link" href="#halls">Залы</a>
             </li>
             <li class="navigation__item">
-              <a href="#about_us" class="navigation__link">О нас</a>
+              <a class="navigation__link" href="#about_us">О нас</a>
             </li>
             <li class="navigation__item">
-              <a href="#booking" class="navigation__link">Бронь</a>
+              <a class="navigation__link" href="#booking">Бронь</a>
             </li>
             <li class="navigation__item">
-              <a href="#reviews" class="navigation__link">Отзывы</a>
+              <a class="navigation__link" href="#reviews">Отзывы</a>
             </li>
             <li>
-              <a href="#contacts" class="navigation__link">Контакты</a>
+              <a class="navigation__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <a href="#" class="call__link" >Заказать звонок</a>
-
+        <a class="call__link" href="#">Заказать звонок</a>
 
       </div>
     </header>
@@ -48,7 +48,7 @@
     <main class="main">
       <section class="present">
         <div class="container  present__container ">
-          <h1 lang="en" class="present__caption">
+          <h1 class="present__caption" lang="en" >
             game over
           </h1>
           <p class="present__subtitle">
@@ -68,9 +68,13 @@
               </li>
             </ul>
 
-            <div class="present__booking">
-              <a href="#booking" class="present__link">Забронировать</a>
+            <a class="present__booking" href="#booking">Забронировать</a>
+
+            <div class="present__next">
+              <a class="present__next-link" href="#services"></a>
             </div>
+
+
           </div>
 
         </div>
@@ -79,7 +83,7 @@
 
 
         <section class="services" id="services">
-          <div class="container">
+          <div class="container services__container">
             <h2 class="services__caption">
               У нас есть все для классного отдыха с друзьями!
             </h2>
@@ -235,29 +239,25 @@
               <fieldset class="form__fieldset reserving">
                 <legend class="form__legend" >Выбери дату и время</legend>
 
-                <div class="reserving__box">
-                  <label class="reserving__label">
-                    Дата <input class="reserving__input reserving__date" type="date" name="date" required>
-                  </label>
+                <div class="reserving__column">
 
-                  <label class="reserving__label">
-                    Время <input  class="reserving__input reserving__time" type="time" name="time" required >
-                  </label>
-                </div>
+                  <div class="reserving__box">
+                    <label class="reserving__label">
+                      Дата <input class="reserving__input reserving__date" type="date" name="date" required>
+                    </label>
 
-                  <label class="reserving__label">
-                    Дата <input class="reserving__input" type="date" name="date" required>
-                  </label>
-
-                  <label class="reserving__label">
-                    Время <input  class="reserving__input" type="time" name="time" required >
-                  </label>
+                    <label class="reserving__label">
+                      Время <input  class="reserving__input reserving__time" type="time" name="time" required >
+                    </label>
+                  </div>
 
                   <label class="reserving__label">
                     Количество человек <input class="reserving__input" type="number"
                                               name="persons" required min="1" max="30">
                   </label>
+                </div>
 
+                <div class="reserving__column">
                   <label class="reserving__label">
                     Имя <input class="reserving__input" type="text" name="name" required>
                   </label>
@@ -265,7 +265,11 @@
                   <label class="reserving__label">
                     Фамилия <input class="reserving__input" type="text" name="surname" required>
                   </label>
+                </div>
 
+
+
+                <div class="reserving__column">
                   <label class="reserving__label">
                     Номер телефона <input class="reserving__input" type="tel" name="tel" required>
                   </label>
@@ -273,7 +277,7 @@
                   <label class="reserving__label">
                     E-mail <input class="reserving__input" type="email" name="mail" required>
                   </label>
-
+                </div>
 
               </fieldset>
 
