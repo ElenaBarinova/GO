@@ -52,6 +52,24 @@
   margin-right: 0;
 }
 
+.social__svg {
+  fill:white
+}
+
+.social__link:hover .social__svg {
+  fill: #EADEED;
+}
+
+.social__link:focus .social__svg {
+  fill: #CD06FF;
+}
+
+.social__link:active .social__svg {
+  fill: #EADEED;
+  border: 1px solid #CD06FF
+}
+
+
 .contact__flexbox {
   display: flex;
   flex-direction: row;

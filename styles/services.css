@@ -29,11 +29,13 @@
   display: flex;
   align-items: baseline;
   flex-direction: column-reverse;
-  padding-bottom: 1em
 }
 
-
 .services__name {
+  min-height: 3em;
+}
+
+.services__text {
   font-weight: 700;
 }
 

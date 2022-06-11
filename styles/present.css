@@ -9,6 +9,8 @@
 .present__container {
   min-height: 823px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .present__subtitle {
@@ -101,16 +103,35 @@
 }
 
 
-/*
-.present__next {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  background-color: #FFFFFF;
-  top: 1px;
-  left: -37px;
-}
-*/
 
+.present__down {
+  z-index: 2;
+  align-self: center;
+  position: relative;
+}
+
+.down__link {
+  position: absolute;
+  top: -40px;
+  left: -48px;
+  stroke: white;
+  fill:none;
+}
+
+.down__link:hover .down__svg {
+  fill: #FFFFFF;
+  stroke:#FFFFFF ;
+
+
+}
+.down__link:focus .down__svg {
+  fill: #CD06FF;
+  stroke: #CD06FF;
+}
+
+.down__link:active .down__svg {
+  border: 1px solid #CD06FF;
+  fill: none;
+  stroke:#FFFFFF
+
+}

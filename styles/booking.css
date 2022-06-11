@@ -4,6 +4,10 @@
   padding-bottom: 80px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
 .booking__caption {
   font-weight: 700;
   font-size: 40px;
@@ -31,9 +35,8 @@
   justify-content: space-between;
 }
 
-.fieldset-hall__label {
+.fieldset-hall__span {
   width: 250px;
-  position: relative;
   display: block;
   font-weight: 700;
   font-size: 30px;
@@ -52,6 +55,27 @@
   -moz-appearance: none;
   appearance: none;
   margin-left: -5px;
+}
+
+.fieldset-hall__input:hover+.fieldset-hall__span {
+  color: #000000;
+  background: #EADEED;
+  border: 3px solid #640AA3;
+  padding: 4px 12px;
+}
+
+.fieldset-hall__input:focus+.fieldset-hall__span {
+  color: #FFFFFF;
+  background: #6C0287;
+  border: 3px solid #FFFFFF;
+  padding: 4px 12px;
+}
+
+.fieldset-hall__label:active+.fieldset-hall__span {
+  color: #000000;
+  background: #FFFFFF;
+  border: 3px solid #640AA3;
+  padding: 4px 12px;
 }
 
 /*Набор развлечений*/
@@ -142,16 +166,17 @@
 .reserving__input {
   width: 100%;
   height: 52px;
-}
 
-form {
-  display: flex;
-  flex-direction: column;
+}
+.reserving__input:hover:active{
+  background: #FFFFFF;
+}
+.reserving__input:focus {
+  border: 2px solid #CD06FF;
 }
 
 .form__btn {
   align-self: flex-end;
-  width: 300px;
   padding: 16px 50px;
   border-radius: 10px;
   background:#FFFFFF;
@@ -163,9 +188,32 @@ form {
   color: #6C0287;
 }
 
-.reserving__box {
+.form__btn:hover {
+  padding: 13px 46px;
+  background: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.form__btn:focus {
+  background: #EADEED;
+
+}
+
+.form__btn:active {
+  padding: 13px 46px;
+  background: #FFFFFF;
+  border: 3px solid #6C0287;
+
+}
+
+.column__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
+
+/*.column__label {
+  padding-top: 1em; } */
+
+
+
