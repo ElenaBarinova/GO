@@ -20,7 +20,11 @@
   text-transform: uppercase;
 }
 
-.call__link {
+.navigation__link:hover {
+  color: #6C0287;
+}
+
+.header__link {
   border-width:  3px;
   border-style: solid;
   border-color: #CD06FF;
@@ -33,12 +37,12 @@
   color: #FFFFFF;
 }
 
-.call__link:hover,.call__link:focus {
+.header__link:hover,.call__link:focus {
   background: #6C0287;
   padding: 15px 35px;
   border: none;
 }
 
-.call__link:active {
+.header__link:active {
   background: #640AA3
 }
