@@ -7,7 +7,7 @@
 .about-us__box-bg {
   width: 600px;
   height: 596px;
-  background-image: url("/img-bg/bg-one.jpg"),
+  background-image: url("../img-bg/bg-one.jpg"),
   url("../img-bg/bg-two.jpg"),
   url("../img-bg/bg-three.png"),
   url("../img-bg/bg-four.jpg"),
