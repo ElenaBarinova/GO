@@ -1,23 +1,8 @@
-.present__caption {
-  font-weight: 900;
-  font-size: 150px;
-  line-height: 150px;
-  text-transform: uppercase;
-  letter-spacing: -0.1em;
-}
-
 .present__container {
   min-height: 823px;
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.present__subtitle {
-  font-size: 28px;
-  line-height: 50px;
-  padding-left: 100px;
-  margin-bottom: 30px;
 }
 
 .present__container:after {
@@ -30,6 +15,60 @@
   position: absolute;
   bottom: 1px;
   right: 130px;
+}
+
+.present__caption {
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 150px;
+  text-transform: uppercase;
+  letter-spacing: -0.1em;
+}
+
+.present__subtitle {
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
+
+.present__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 150px;
+}
+
+.present__list {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.present__subject {
+  font-weight: 900;
+  color: #CD06FF;
+  text-align: center;
+}
+
+.present__subject_size {
+  font-size: 100px;
+  line-height: 141px;
+}
+
+.present__subject_style {
+  font-size: 75px;
+  line-height: 106px;
+  font-variant: small-caps;
+}
+
+.present__text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
 }
 
 .present__booking {
@@ -45,64 +84,13 @@
   color: #FFFFFF;
 }
 
-.present__booking:hover {
+.present__booking:hover,.present__booking:focus {
   background-color: #840AA3;
-
-}
-
-.present__booking:focus {
-  background: #840AA3
 }
 
 .present__booking:active {
   background: #640AA3
 }
-
-.present__box {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 150px;
-
-
-}
-
-.present__list {
-  width: 400px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 40px;
-}
-
-.present__subject {
-  font-weight: 900;
-  color: #CD06FF;
-  text-align: center;
-
-}
-
-.present__subject_size {
-  font-size: 100px;
-  line-height: 141px;
-}
-
-
-.present__subject_style {
-  font-size: 75px;
-  line-height: 106px;
-  font-variant: small-caps;
-}
-
-
-.present__text {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 34px;
-  text-align: center;
-}
-
-
 
 .present__down {
   z-index: 2;
@@ -134,24 +122,5 @@
   background-image: url("../img/down-active.svg");
 }
 
-
-/*
-.down__link:hover .down__svg {
-  fill: #FFFFFF;
-  stroke:#FFFFFF ;
-
-
-}
-.down__link:focus .down__svg {
-  fill: #CD06FF;
-  stroke: #CD06FF;
-}
-
-.down__link:active .down__svg {
-  border: 1px solid #CD06FF;
-  fill: none;
-  stroke:#FFFFFF
-
-} */
 
 

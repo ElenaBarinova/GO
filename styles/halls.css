@@ -16,8 +16,8 @@
 }
 
 .halls__item {
+  width: 580px;
   height: 349px;
-  min-width: 580px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,17 +25,14 @@
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
-  display: flex;
   text-align: center;
-
+  display: flex;
 }
-
 
 .halls__name {
   width: 50%;
   margin: auto;
 }
-
 
 .halls__item-80vibes {
   background-image: url("../img2/80vibes.png");

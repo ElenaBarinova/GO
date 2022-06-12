@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .booking__caption {
   font-weight: 700;
   font-size: 40px;
@@ -71,7 +72,7 @@
   padding: 4px 12px;
 }
 
-.fieldset-hall__label:active+.fieldset-hall__span {
+.fieldset-hall__input:active+.fieldset-hall__span {
   color: #FFFFFF;
   background: #6C0287;
   border: 3px solid #FFFFFF;
