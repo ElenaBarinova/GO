@@ -8,12 +8,12 @@
   width: 600px;
   height: 596px;
   background-image: url("/img-bg/bg-one.jpg"),
-  url("/img-bg/bg-two.jpg"),
-  url("/img-bg/bg-three.png"),
-  url("/img-bg/bg-four.jpg"),
-  url("/img-bg/bg-five.jpg"),
-  url("/img-bg/bg-six.jpg"),
-  url("/img-bg/bg-seven.jpg");
+  url("../img-bg/bg-two.jpg"),
+  url("../img-bg/bg-three.png"),
+  url("../img-bg/bg-four.jpg"),
+  url("../img-bg/bg-five.jpg"),
+  url("../img-bg/bg-six.jpg"),
+  url("../img-bg/bg-seven.jpg");
   background-position: top left,
   top right,
   top 206px left,
