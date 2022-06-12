@@ -1,4 +1,4 @@
-/*.about-us__box {
+.about-us__box {
   display: inline-block;
   vertical-align: top;
   border-width: 0;
@@ -8,27 +8,27 @@
   width: 600px;
   height: 596px;
   background-image: url("/img-bg/bg-one.jpg"),
-      url("/img-bg/bg-two.jpg"),
-      url("/img-bg/bg-three.png"),
-      url("/img-bg/bg-four.jpg"),
-      url("/img-bg/bg-five.jpg"),
-      url("/img-bg/bg-six.jpg"),
-      url("/img-bg/bg-seven.jpg");
+  url("/img-bg/bg-two.jpg"),
+  url("/img-bg/bg-three.png"),
+  url("/img-bg/bg-four.jpg"),
+  url("/img-bg/bg-five.jpg"),
+  url("/img-bg/bg-six.jpg"),
+  url("/img-bg/bg-seven.jpg");
   background-position: top left,
-      top right,
-      top 206px left,
-      top 206px left 166px,
-      top 206px right,
-      bottom left,
-      bottom right;
+  top right,
+  top 206px left,
+  top 206px left 166px,
+  top 206px right,
+  bottom left,
+  bottom right;
   background-repeat: no-repeat;
   background-size: 300px 206px,
-      300px 206px,
-      164px 224px,
-      180px 224px,
-      265px 224px,
-      380px 166px,
-      220px 166px;
+  300px 206px,
+  164px 224px,
+  180px 224px,
+  265px 224px,
+  380px 166px,
+  220px 166px;
 }
 
 .about-us__box-text {
@@ -36,7 +36,7 @@
   height: 596px;
   padding-left: 80px;
 }
-*/
+
 .about-us__caption {
   font-weight: 700;
   font-size: 40px;
@@ -46,20 +46,21 @@
   margin-bottom: 50px;
 }
 
-.about-us__text:not(:last-child) {
+.about-us__text-margin {
   margin-bottom: 2em;
 }
 
-.about-us__quote {
+.about-us__blockquote {
   text-indent: -0.7em;
   font-size: 44px;
   font-style: normal;
   line-height: 50px;
   text-transform: uppercase;
   quotes: "“" "”" "‘" "’";
+  float: right;
 }
 
-.about-us__quote:before {
+.about-us__blockquote:before {
   content: open-quote;
   width: 39px;
   height: 35px;
@@ -69,7 +70,7 @@
   color: #6C0287;
 }
 
-.about-us__quote:after {
+.about-us__blockquote:after {
   content: close-quote;
   width: 39px;
   height: 35px;
@@ -79,16 +80,11 @@
   color: #6C0287;
 }
 
-.about-us__cite {
-  display: block;
-  max-width: 280px;
-  padding-right: 20px;
-  position:absolute;
-  right: 1px;
-
+.about-us__container {
+  padding-left: 220px;
 }
-.about-us__figcaption {
-  height: 84px;
+
+.about-us__cite {
   position: relative;
 }
 
@@ -97,9 +93,8 @@
   width: 80px;
   height: 80px;
   display: block;
-  background-image: url("../img2/arcadiy.png");
+  background-image: url("/img2/arcadiy.png");
   position: absolute;
   left: -110px;
 }
-
 
