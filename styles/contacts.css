@@ -61,14 +61,14 @@
 }
 
 .social__link:focus .social__svg {
-  fill: #CD06FF;
-}
-
-.social__link:active .social__svg {
   fill: #EADEED;
   border: 1px solid #CD06FF
 }
 
+.social__link:active .social__svg {
+  fill: #CD06FF;
+  border: none;
+}
 
 .contact__flexbox {
   display: flex;

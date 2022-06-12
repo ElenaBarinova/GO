@@ -98,6 +98,9 @@ section {
   clear: both;
 }
 
+button {
+  cursor: pointer;
+}
 
 
 

@@ -27,8 +27,8 @@
   background-color: #440F51;
   color: white;
 }
-.faq__item:after {
-  content:"";
+
+.faq__link {
   width: 46px;
   height: 46px;
   display: inline-block;
@@ -41,10 +41,35 @@
   right: 70px;
 }
 
-.faq__item:nth-child(2n):after {
-  content: "";
+
+.faq__link:hover {
+  background-image: url("../img/open-purple-hover.svg");
+
+}
+
+/*.faq__link:focus {
+  background-image: url("../img/open.svg");
+
+}*/
+
+.faq__link:active {
+  background-image: url("../img/open-purple-active.svg");
+
+}
+
+.faq__item:nth-child(2n) .faq__link {
   background-image: url("../img/open.svg");
 }
 
+.faq__item:nth-child(2n) .faq__link:hover {
+  background-image: url("../img/open-hover.svg");
 
+}
 
+/*.faq__item:nth-child(2n) .faq__link:focus {
+
+}*/
+
+.faq__item:nth-child(2n) .faq__link:active {
+  background-image: url("../img/open-active.svg");
+}

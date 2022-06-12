@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.header__logo:before {
+/*.header__logo:before {
   content: "";
   display: block;
   width: 51px;
@@ -38,7 +38,7 @@
   position: absolute;
   right:-20px;
   top: -16px;
-}
+}*/
 
 /*навигация*/
 
@@ -73,9 +73,9 @@
 }
 
 .call__link:focus {
-  background: #640AA3;
+  background: #6C0287;
 }
 
 .call__link:active {
-  background: #6C0287
+  background: #640AA3
 }

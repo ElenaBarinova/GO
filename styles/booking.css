@@ -65,16 +65,16 @@
 }
 
 .fieldset-hall__input:focus+.fieldset-hall__span {
-  color: #FFFFFF;
-  background: #6C0287;
-  border: 3px solid #FFFFFF;
+  color: #000000;
+  background: #FFFFFF;
+  border: 3px solid #640AA3;
   padding: 4px 12px;
 }
 
 .fieldset-hall__label:active+.fieldset-hall__span {
-  color: #000000;
-  background: #FFFFFF;
-  border: 3px solid #640AA3;
+  color: #FFFFFF;
+  background: #6C0287;
+  border: 3px solid #FFFFFF;
   padding: 4px 12px;
 }
 
@@ -127,6 +127,9 @@
   left: -37px;
 }
 
+.fun__input:focus:before {
+  border: 1px solid #CD06FF;
+}
 
 .fun__input-checkbox:before {
   width: 24px;
@@ -139,6 +142,12 @@
   border-radius: 50%;
 }
 
+.fun__input-radio:before:focus {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  outline:1px solid #CD06FF;
+}
 /* Дата и время*/
 
 .reserving {
@@ -195,15 +204,15 @@
 }
 
 .form__btn:focus {
-  background: #EADEED;
-
-}
-
-.form__btn:active {
   padding: 13px 46px;
   background: #FFFFFF;
   border: 3px solid #6C0287;
+}
 
+.form__btn:active {
+  background: #EADEED;
+  padding: 16px 50px;
+  border: none;
 }
 
 .column__container {

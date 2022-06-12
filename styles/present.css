@@ -51,11 +51,11 @@
 }
 
 .present__booking:focus {
-  background: #640AA3
+  background: #840AA3
 }
 
 .present__booking:active {
-  background: #840AA3
+  background: #640AA3
 }
 
 .present__box {
@@ -114,10 +114,28 @@
   position: absolute;
   top: -40px;
   left: -48px;
-  stroke: white;
-  fill:none;
+  width: 97px;
+  height: 97px;
+  background-image: url("../img/down.svg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
+.down__link:hover {
+  background-image: url("../img/down-hover.svg");
+}
+
+.down__link:focus {
+  background-image: url("../img/down-focus.svg")
+}
+
+.down__link:active {
+  background-image: url("../img/down-active.svg");
+}
+
+
+/*
 .down__link:hover .down__svg {
   fill: #FFFFFF;
   stroke:#FFFFFF ;
@@ -134,4 +152,6 @@
   fill: none;
   stroke:#FFFFFF
 
-}
+} */
+
+
