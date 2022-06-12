@@ -68,7 +68,11 @@
 }
 
 .social__svg {
-  fill:white
+  fill:white;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-delay: 0.10s;
+  transition-timing-function:linear;
 }
 
 .social__link:hover .social__svg {

@@ -1,40 +1,8 @@
-.about-us__box {
-  display: inline-block;
-  vertical-align: top;
-  border-width: 0;
-}
-
-.about-us__box-bg {
-  width: 600px;
-  height: 596px;
-  background-image: url("../img-bg/bg-one.jpg"),
-  url("../img-bg/bg-two.jpg"),
-  url("../img-bg/bg-three.png"),
-  url("../img-bg/bg-four.jpg"),
-  url("../img-bg/bg-five.jpg"),
-  url("../img-bg/bg-six.jpg"),
-  url("../img-bg/bg-seven.jpg");
-  background-position: top left,
-  top right,
-  top 206px left,
-  top 206px left 166px,
-  top 206px right,
-  bottom left,
-  bottom right;
-  background-repeat: no-repeat;
-  background-size: 300px 206px,
-  300px 206px,
-  164px 224px,
-  180px 224px,
-  265px 224px,
-  380px 166px,
-  220px 166px;
-}
-
-.about-us__box-text {
-  width: 570px;
-  height: 596px;
-  padding-left: 80px;
+.about-us__content {
+  min-height: 596px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .about-us__caption {
@@ -45,6 +13,23 @@
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+
+
+.about-us__box-bg {
+  width: 600px;
+  height: 596px;
+  background-image: url("../img2/about-us.jpg");
+}
+
+
+.about-us__box-text {
+  width: 570px;
+  height: 596px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .about-us__text-margin {
   margin-bottom: 2em;
@@ -57,7 +42,6 @@
   line-height: 50px;
   text-transform: uppercase;
   quotes: "“" "”" "‘" "’";
-  float: right;
 }
 
 .about-us__blockquote:before {

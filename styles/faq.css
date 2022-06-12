@@ -39,18 +39,17 @@
   position: absolute;
   top: 20px;
   right: 70px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-delay: 0.15s;
+  transition-timing-function:ease;
 }
 
 
 .faq__link:hover {
   background-image: url("../img/open-purple-hover.svg");
-
 }
 
-/*.faq__link:focus {
-  background-image: url("../img/open.svg");
-
-}*/
 
 .faq__link:active {
   background-image: url("../img/open-purple-active.svg");
@@ -63,12 +62,8 @@
 
 .faq__item:nth-child(2n) .faq__link:hover {
   background-image: url("../img/open-hover.svg");
-
 }
 
-/*.faq__item:nth-child(2n) .faq__link:focus {
-
-}*/
 
 .faq__item:nth-child(2n) .faq__link:active {
   background-image: url("../img/open-active.svg");
