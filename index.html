@@ -234,29 +234,34 @@
               </fieldset>
 
               <fieldset class="form__fieldset reserving">
-                <legend class="form__legend" >Выбери дату и время</legend>
+                <legend class="form__legend " >Выбери дату и время</legend>
 
-                <div class="reserving__column column">
+                <fieldset class="reserving__column column">
 
                   <div class="column__container ">
-                    <label class="reserving__label column__label">
-                      Дата <input class="reserving__input column__input column__input-date" type="date" name="date"
+                    <label class="reserving__label column__label  column__label_width">
+                      <span class="visually-hidden">Дата</span>
+                      <input class="reserving__input column__input column__input-date"
+                                                   type="date" name="date"
                                   required>
                     </label>
 
-                    <label class="reserving__label column__label">
-                      Время <input  class="reserving__input  column__input column__input-time" type="time" name="time"
+                    <label class="reserving__label column__label column__label_width">
+                      <span class="visually-hidden">Время</span> <input  class="reserving__input  column__input column__input-time"
+                                                 type="time" name="time"
                                     required >
                     </label>
                   </div>
 
                   <label class="reserving__label column__label">
-                    Количество человек <input class="reserving__input column__input column__input-people" type="number"
+                    <span class="visually-hidden">Количество человек </span>
+                    <input class="reserving__input column__input column__input-people"
+                                                    type="number" placeholder="Количество человек"
                                               name="persons" required min="1" max="30">
                   </label>
-                </div>
+                </fieldset>
 
-                <div class="reserving__column">
+                <fieldset class="reserving__column">
                   <label class="reserving__label">
                     Имя <input class="reserving__input" type="text" name="name" required>
                   </label>
@@ -264,11 +269,11 @@
                   <label class="reserving__label">
                     Фамилия <input class="reserving__input" type="text" name="surname" required>
                   </label>
-                </div>
+                </fieldset>
 
 
 
-                <div class="reserving__column">
+                <fieldset class="reserving__column">
                   <label class="reserving__label">
                     Номер телефона <input class="reserving__input" type="tel" name="tel" required>
                   </label>
@@ -276,7 +281,7 @@
                   <label class="reserving__label">
                     E-mail <input class="reserving__input" type="email" name="mail" required>
                   </label>
-                </div>
+                </fieldset>
 
               </fieldset>
 

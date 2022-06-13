@@ -27,7 +27,6 @@
   text-transform: uppercase;
   text-align: center;
   display: flex;
-  animation-name: services-size;
   animation-timing-function: linear;
   transition-duration: 0.5s;
 }
