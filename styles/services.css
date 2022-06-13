@@ -32,7 +32,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  animation-name: services-size;
+  animation-timing-function: linear;
+  transition-duration: 0.5s;
 }
+
+.services__item:hover {
+  transform: scale(1.1);
+}
+
+
 .services__name {
   min-height: 3em;
 }
@@ -64,3 +73,4 @@
 .services__item-option-6 {
   background-image: url("../img/sony.jpg");
 }
+
