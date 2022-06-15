@@ -83,7 +83,7 @@
 
 .fieldset-hall__input:active+.fieldset-hall__span {
   color: #FFFFFF;
-  background: #6C0287;
+  background: var(--main-color,#6C0287);
   border: 3px solid #FFFFFF;
   padding: 4px 12px;
 }
@@ -221,7 +221,7 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--main-color) ,#6C0287;
   transition-property: border-left-color,border-bottom-color,background-color;
   transition-duration: 0.3s,0.2s,0.2s;
   transition-delay: 0.15s;
@@ -231,13 +231,17 @@
 .form__btn:hover {
   padding: 13px 46px;
   background: #EADEED;
-  border: 3px solid #6C0287;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--main-color,#6C0287);
 }
 
 .form__btn:focus {
   padding: 13px 46px;
   background: #FFFFFF;
-  border: 3px solid #6C0287;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--main-color,#6C0287);
 }
 
 .form__btn:active {

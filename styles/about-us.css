@@ -51,7 +51,7 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 50px;
-  color: #6C0287;
+  color: var(--main-color,#6C0287);
 }
 
 .about-us__blockquote:after {
@@ -61,7 +61,7 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 50px;
-  color: #6C0287;
+  color: var(--main-color,#6C0287);
 }
 
 .about-us__container {
