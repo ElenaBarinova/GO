@@ -18,9 +18,10 @@
 .services__list {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 40px 20px;
-
+  height: 566px; /* высота, чтобы посмотреть align-items ? потом удалить*/
 }
 
 .services__item {
@@ -39,8 +40,7 @@
 }
 
 .services__item_height {
-
-
+  align-self: flex-end;  /* удалить, костыль. временно*/
 }
 
 .services__item:hover {
