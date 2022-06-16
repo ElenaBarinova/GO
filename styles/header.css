@@ -34,7 +34,7 @@
 .header__link {
   border-width:  3px;
   border-style: solid;
-  border-color: #CD06FF;
+  border-color: var(--two-color,#CD06FF);
   border-radius: 10px;
   padding: 12px 32px;
   font-weight: 700;
@@ -43,8 +43,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
   transition-property: background-color, border-color;
-  transition-duration: 2s, 1s, 1s, 1s, 1s;
-  transition-delay: 0.1s;
+  transition-duration: 1s;
   transition-timing-function: ease;
 }
 
@@ -55,5 +54,5 @@
 }
 
 .header__link:active {
-  background: #640AA3
+  background: var(--border-color,#640AA3);
 }

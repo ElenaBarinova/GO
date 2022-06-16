@@ -1,3 +1,19 @@
 :root {
   --main-color: #6C0287;
+  --two-color: #CD06FF;
+  --bg-color:#440F51;
+  --three-color: #840AA3;
+  --border-color: #640AA3;
+}
+
+
+.services {
+  --cart-count: 3;
+  --gap: 20px;
+  --height-cart: 228px ;
+}
+
+.halls {
+  --cart-count: 2;
+  --gap: 20px;
 }

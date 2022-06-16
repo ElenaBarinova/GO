@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 .services__caption {
   max-width: 980px;
@@ -17,18 +18,18 @@
 .services__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px 20px;
+
 }
 
 .services__item {
   width: 380px;
-  height: 228px;
+  height: var(--height-cart);
   padding-left: 40px;
   display: flex;
-  align-items: baseline;
   flex-direction: column-reverse;
+  flex-basis: calc(100% / var(--cart-count) - (var(--gap) * (var(--cart-count) - 1)) / var(--cart-count));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,10 +38,14 @@
   transition-duration: 0.5s;
 }
 
+.services__item_height {
+
+
+}
+
 .services__item:hover {
   transform: scale(1.1);
 }
-
 
 .services__name {
   min-height: 3em;
@@ -56,6 +61,7 @@
 
 .services__item-option-2 {
   background-image: url("../img/audio.jpg");
+
 }
 
 .services__item-option-3 {
@@ -68,6 +74,7 @@
 
 .services__item-option-5 {
   background-image: url("../img/netflix.jpg");
+
 }
 
 .services__item-option-6 {

@@ -18,6 +18,7 @@
 .halls__item {
   width: 580px;
   height: 349px;
+  flex-basis: calc(100% / var(--cart-count) - (var(--gap) * (var(--cart-count) - 1)) / var(--cart-count));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
