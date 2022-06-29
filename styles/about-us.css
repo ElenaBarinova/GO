@@ -18,7 +18,7 @@
 .about-us__box-bg {
   width: 600px;
   height: 596px;
-  background-image: url("../img2/about-us.jpg");
+  background-image: url("../img/about-us/about-us.jpg");
 }
 
 
@@ -77,7 +77,7 @@
   width: 80px;
   height: 80px;
   display: block;
-  background-image: url("/img2/arcadiy.png");
+  background-image: url("/img/about-us/arcadiy.png");
   position: absolute;
   left: -110px;
 }

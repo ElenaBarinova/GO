@@ -1,5 +1,5 @@
 .header {
-  padding: 38px 0 50px;
+  padding-top: 30px;
 }
 
 .header__container {
@@ -12,15 +12,15 @@
 .navigation__list {
   display: flex;
   flex-direction: row;
+  gap: 40px;
   justify-content: space-between;
   font-weight: 400;
   font-size: 22px;
-  gap: 40px;
   line-height: 50px;
+  text-transform: uppercase;
 }
 
 .navigation__link {
-  text-transform: uppercase;
   transition-property: color;
   transition-duration: 0.4s;
   transition-delay: 0.07s;

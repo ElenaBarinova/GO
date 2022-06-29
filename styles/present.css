@@ -9,7 +9,7 @@
   content: "";
   width:675px ;
   height:762px;
-  background-image: url("../img2/caption.png");
+  background-image: url("../img/present/man-with-vr-glasses.png");
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
@@ -20,7 +20,7 @@
 .present__caption {
   font-weight: 900;
   font-size: 150px;
-  line-height: 150px;
+  line-height: 100%;
   text-transform: uppercase;
   letter-spacing: -0.1em;
 }
@@ -107,7 +107,7 @@
   left: -48px;
   width: 97px;
   height: 97px;
-  background-image: url("../img/down.svg") ;
+  background-image: url("../img/present/link-down.svg") ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -117,15 +117,15 @@
 }
 
 .down__link:hover {
-  background-image: url("../img/down-hover.svg");
+  background-image: url("../img/present/down-hover.svg");
 }
 
 .down__link:focus {
-  background-image: url("../img/down-focus.svg")
+  background-image: url("../img/present/down-focus.svg")
 }
 
 .down__link:active {
-  background-image: url("../img/down-active.svg");
+  background-image: url("../img/present/down-active.svg");
 }
 
 

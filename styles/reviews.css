@@ -4,46 +4,42 @@
   text-align: center;
   line-height: 50px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 100px;
+}
 
 .reviews__item {
-  padding-left: 103px;
-  margin-bottom: 50px;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.reviews__item:last-child{
-  margin-bottom: 0;
-}
+.reviews__figcaption {
+  display: block;
 
-.reviews__block-img {
-  max-width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 10px;
-  margin-right: 20px;
-
-}
-.reviews__figure {
-  display: inline-block;
 }
 .reviews__figcaption {
   text-align: center;
 }
+
 .reviews__text {
-  display:inline-block;
+  display:block;
   max-width: 680px;
-  position: absolute;
-  top: 50px;
+  padding-top: 52px;
 }
 
 .reviews__block-img {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
   position: relative;
 }
-
 
 .reviews__block-img:before{
   content: " ";

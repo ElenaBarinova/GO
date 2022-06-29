@@ -17,7 +17,6 @@
 .contact__item {
   padding-left: 60px;
   position: relative;
-
 }
 
 .contact__item:before {
@@ -28,25 +27,24 @@
 
 .contact__item-address {
   margin-bottom: 2em;
-
 }
+
 .contact__item-address:before {
   width: 32px;
   height: 32px;
-  background-image: url("../img2/location.svg");
+  background-image: url("../img/contacts/location.svg");
   left: 1px;
   top: 1ex;
 }
 
 .contact__item-phone {
   margin-bottom: 10px;
-
 }
 
 .contact__item-phone:before {
   width: 32px;
   height: 32px;
-  background-image: url("../img2/tel.svg");
+  background-image: url("../img/contacts/tel.svg");
   background-size: cover;
   left: 1px;
 }
@@ -54,7 +52,7 @@
 .contact__item-mail:before {
   width: 32px;
   height: 24px;
-  background-image: url("../img2/mail1.svg");
+  background-image: url("../img/contacts/mail.svg");
   left: 1px;
 }
 
@@ -95,6 +93,7 @@
   justify-content: space-between;
   margin-bottom: 200px;
 }
+
 .footer__container_width {
   max-width: 328px;
 }
@@ -106,5 +105,4 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-
 }
