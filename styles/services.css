@@ -13,6 +13,7 @@
   line-height: 50px;
   text-transform: uppercase;
   margin-bottom: 40px;
+  padding: 0 50px;
 }
 
 .services__list {
@@ -21,7 +22,6 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 40px 20px;
-  height: 566px; /* высота, чтобы посмотреть align-items ? потом удалить*/
 }
 
 .services__item {
@@ -39,8 +39,12 @@
   transition-duration: 0.5s;
 }
 
-.services__item_height {
-  align-self: flex-end;  /* удалить, костыль. временно*/
+.services__item:nth-child(2) {
+  margin-top: 70px;
+}
+
+.services__item:nth-child(2n+4) {
+  margin-top: -70px;
 }
 
 .services__item:hover {
@@ -51,8 +55,14 @@
   min-height: 3em;
 }
 
+.services__name-option-2 {
+  padding-right: 100px;
+}
+
 .services__text {
   font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .services__item-option-1 {

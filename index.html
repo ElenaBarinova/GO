@@ -93,7 +93,7 @@
                   </p>
                 </div>
               </li>
-              <li class="services__item services__item_height services__item-option-2 ">
+              <li class="services__item services__item-option-2 ">
                 <p class="services__name services__name-option-2">
                   Аудио-система 5.1 с отличным звуком
                 </p>
@@ -185,10 +185,10 @@
                 <legend class="form__legend">Собери набор развлечений</legend>
 
                 <fieldset class="fun__fieldset console" >
-                  <legend class="form__legend fun__legend" >Приставка</legend>
+                  <legend class="form__legend fun__legend" >Приставка:</legend>
                   <label class="fun__label">
                     <input class="fun__input fun__input-radio" type="radio" name="game-console" value="PlayStation">
-                    <span lang="en">PlayStation</span>
+                    <span lang="en">PlayStation 5</span>
                   </label>
                   <label class="fun__label">
                     <input class="fun__input fun__input-radio" type="radio" name="game-console" value="SegaMegaDrive">
@@ -243,34 +243,37 @@
 
                   <div class="column__container ">
                     <label class="reserving__label column__label  column__label_width">
-                      <span class="visually-hidden">Дата</span>
+                      <span class="visually-hidden reserving__span" >Дата</span>
                       <input class="reserving__input column__input column__input-date"
                                                    type="date" name="date"
                                   required>
                     </label>
 
                     <label class="reserving__label column__label column__label_width">
-                      <span class="visually-hidden">Время</span> <input  class="reserving__input  column__input column__input-time"
+                      <span class="visually-hidden reserving__span">Время</span> <input
+                      class="reserving__input  column__input column__input-time"
                                                  type="time" name="time"
                                     required >
                     </label>
                   </div>
 
                   <label class="reserving__label column__label">
-                    <span class="visually-hidden">Количество человек </span>
+                    <span class="visually-hidden reserving__span">Количество человек </span>
                     <input class="reserving__input column__input column__input-people"
                                                     type="number" placeholder="Количество человек"
                                               name="persons" required min="1" max="30">
                   </label>
                 </fieldset>
 
-                <fieldset class="reserving__column">
+                <fieldset class="reserving__column colum2">
                   <label class="reserving__label">
-                    Имя <input class="reserving__input" type="text" name="name" required>
+                    <span class="reserving__span reserving__span">Имя</span>
+                    <input class="reserving__input" type="text" name="name" required>
                   </label>
 
                   <label class="reserving__label">
-                    Фамилия <input class="reserving__input" type="text" name="surname" required>
+                    <span class="reserving__span">Фамилия</span>
+                    <input class="reserving__input" type="text" name="surname" required>
                   </label>
                 </fieldset>
 
@@ -278,17 +281,22 @@
 
                 <fieldset class="reserving__column">
                   <label class="reserving__label">
-                    Номер телефона <input class="reserving__input" type="tel" name="tel" required>
+                    <span class="reserving__span">Телефон</span>
+                    <input class="reserving__input" type="tel" name="tel" required>
                   </label>
 
                   <label class="reserving__label">
-                    E-mail <input class="reserving__input" type="email" name="mail" required>
+                    <span class="reserving__span">E-mail</span>
+                    <input class="reserving__input" type="email" name="mail" required>
                   </label>
                 </fieldset>
 
               </fieldset>
 
-              <button class="form__btn" type="submit">Забронировать</button>
+              <div class="form__box">
+                <button class="form__btn" type="submit">Забронировать</button>
+              </div>
+
             </form>
           </div>
         </section>
@@ -302,12 +310,12 @@
             <div class="about-us__box about-us__box-bg"></div>
 
             <div class="about-us__box about-us__box-text">
-              <p class="about-us__text about-us__text-margin">
-                Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в
-                центральной части города.
+              <p class="about-us__text about-us__text_margin">
+                Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности
+                в&nbsp;центральной части города.
               </p>
-              <p class="about-us__text">
-                Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать вас топовыми
+              <p class="about-us__text about-us__text_right">
+                Каждый день мы стараемся создавать для&nbsp;вас&nbsp;самую лучшую игровую атмосферу и&nbsp;радовать вас топовыми
                 игровыми разработками со всего мира.
               </p>
               <figure class="about-us__figure">
@@ -318,11 +326,9 @@
                 </blockquote>
                 <figcaption class="about-us__figcaption">
                   <div class="about-us__container" >
-                    <div class="about-us__cite">
-                      <cite class="about-us__text about-us__text-bg">
+                      <p class="about-us__text about-us__name">
                         Аркадий Абакшин, создатель игровой территории<span lang="en"> GAME OVER </span>
-                      </cite>
-                    </div>
+                      </p>
                   </div>
                 </figcaption>
               </figure>
@@ -340,7 +346,7 @@
               <li class="reviews__item">
                 <figure class="reviews__figure">
                   <div class="reviews__block-img">
-                    <img class="reviews__img" src="img/reviews/max.jpg" alt="фото Максима Самойлова"  height="250">
+                    <img class="reviews__img" src="img/reviews/max.jfif" alt="фото Максима Самойлова"  height="250">
                   </div>
                   <figcaption class="reviews__figcaption">
                     Макс Самойлов
@@ -354,7 +360,7 @@
               <li class="reviews__item">
                 <figure class="reviews__figure">
                   <div class="reviews__block-img">
-                    <img class="reviews__img" src="img/reviews/oksana.jpg" alt="фото Оксаны Самойловой"  height="250">
+                    <img class="reviews__img" src="img/reviews/oksana.jfif" alt="фото Оксаны Самойловой"  height="250">
                   </div>
                   <figcaption class="reviews__figcaption">
                     Оксана Григорьева
@@ -438,10 +444,10 @@
               <div class="footer__container footer__container_width">
                 <ul class="contact__list">
                   <li class="contact__item contact__item-address" >
-                    г. Москва ул.&nbsp;Аквамарина,&nbsp;16
+                    г. Москва ул.&nbsp;Усачёва,&nbsp;29 к3
                   </li>
                   <li class="contact__item contact__item-phone">
-                    <a href="tel:89059302893" target="_blank">8(905)930-28-93</a>
+                    <a href="tel:89059302893" target="_blank">8 (950) 930 - 28 - 93</a>
                   </li>
                   <li class="contact__item contact__item-mail">
                     <a href="mailto:GameOver@gmail.com" target="_blank">GameOver@gmail.com</a>
@@ -508,7 +514,7 @@
 
               <div class="design">
                 <a class="design__link" href="mailto:ilina9825@gmail.com"  target="_blank">
-                  <p lang="en">Design by Anastasia Ilina</p>
+                  <p class="desing__name" lang="en">Design by Anastasia Ilina</p>
                   <p>ilina9825@gmail.com</p>
                 </a>
               </div>

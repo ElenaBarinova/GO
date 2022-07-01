@@ -7,7 +7,7 @@
   text-align: center;
   line-height: 50px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .contact__list {
@@ -15,6 +15,9 @@
 }
 
 .contact__item {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   padding-left: 60px;
   position: relative;
 }
@@ -26,7 +29,7 @@
 }
 
 .contact__item-address {
-  margin-bottom: 2em;
+  margin-bottom: 44px;
 }
 
 .contact__item-address:before {
@@ -53,17 +56,16 @@
   width: 32px;
   height: 24px;
   background-image: url("../img/contacts/mail.svg");
-  left: 1px;
+  left: 4px;
+  top: 5px;
 }
 
-.social__item {
-  display: inline-block;
-  margin-right: 28px;
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
 }
 
-.social__item:last-child {
-  margin-right: 0;
-}
 
 .social__svg {
   fill:white;
@@ -91,7 +93,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 200px;
+  margin-bottom: 139px;
 }
 
 .footer__container_width {
@@ -105,4 +107,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+
+.design__link {
+  text-align: end;
+}
+
+.desing__name {
+  margin-bottom: 5px;
 }

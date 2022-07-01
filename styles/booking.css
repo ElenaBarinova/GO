@@ -15,7 +15,7 @@
   text-align: center;
   line-height: 50px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 
 .form__legend {
@@ -93,12 +93,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 100px 0 100px;
 
 }
 
 .fun__legend {
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   text-align: left;
 }
 
@@ -108,14 +108,20 @@
   line-height: 25px;
   display: flex;
   flex-direction: column;
-  gap: 1ex;
+  gap: 21px;
   justify-content: flex-start;
+}
+.console {
+  gap: 23px;
+}
+.more, .games {
+  padding-right: 12px;
 }
 
 .fun__label {
   display: block;
   position: relative;
-  margin-left: 37px
+  margin-left: 39px
 
 }
 .fun__input {
@@ -133,7 +139,7 @@
   height: 24px;
   position: absolute;
   background-color: #FFFFFF;
-  top: 1px;
+  top: 0;
   left: -37px;
   transition-property: border-right-color,border-top-color,border-left-color,border-bottom-color;
   transition-duration: 0.2s;
@@ -154,6 +160,7 @@
 .fun__input-radio:before {
   width: 27px;
   height: 27px;
+  left: -39px;
   border-radius: 50%;
 }
 
@@ -171,7 +178,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0 100px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .reserving__label {
@@ -187,8 +194,17 @@
   row-gap: 14px;
 }
 
+.reserving__span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.colum2 {
+  width: 280px;
+}
+
 .column__label{
-  padding-top: 17px;
+  padding-top: 20px;
 }
 
 .column__label_width {
@@ -209,6 +225,12 @@
 }
 .reserving__input:focus {
   border: 2px solid var(--two-color,#CD06FF);
+}
+
+.form__box {
+  padding: 0 100px;
+  align-self: flex-end;
+
 }
 
 .form__btn {

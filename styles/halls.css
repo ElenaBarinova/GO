@@ -4,7 +4,7 @@
   text-align: center;
   line-height: 50px;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
 }
 
 .halls__list {
@@ -39,6 +39,10 @@
 .halls__name {
   width: 50%;
   margin: auto;
+}
+
+.halls__name-star-wars {
+  padding-left: 10px;
 }
 
 .halls__item-80vibes {

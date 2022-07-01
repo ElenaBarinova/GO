@@ -96,6 +96,7 @@
 }
 
 .present__down {
+  display: block;
   z-index: 2;
   align-self: center;
   position: relative;
@@ -103,8 +104,8 @@
 
 .down__link {
   position: absolute;
-  top: -40px;
-  left: -48px;
+  top: -35px;
+  left: -51px;
   width: 97px;
   height: 97px;
   background-image: url("../img/present/link-down.svg") ;
