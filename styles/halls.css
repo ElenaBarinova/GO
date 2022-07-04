@@ -37,7 +37,7 @@
 }
 
 .halls__name {
-  width: 50%;
+  width: 45%;
   margin: auto;
 }
 
@@ -59,4 +59,56 @@
 
 .halls__item-neon-style {
   background-image: url("../img/halls/neon.png");
+}
+
+@media (max-width: 1200px) {
+  .halls__caption {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+
+  .halls__item {
+    height: 267px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .halls__caption {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+
+  .halls__list {
+    row-gap: 17px;
+  }
+
+  .halls__item {
+    height: 200px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .halls__caption {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .halls__list {
+    row-gap: 10px;
+  }
+
+  .halls__item {
+    height: 168px;
+    flex-basis: 100%;
+    font-size: 26px;
+    line-height: 34px;
+  }
 }

@@ -1,5 +1,4 @@
 .present__container {
-  min-height: 823px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,7 @@
   height:762px;
   background-image: url("../img/present/man-with-vr-glasses.png");
   background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
   position: absolute;
   bottom: 1px;
@@ -40,12 +40,14 @@
 }
 
 .present__list {
-  width: 400px;
+  max-width: 400px;
   display: flex;
   flex-direction: row;
+  justify-content: start;
   align-items: flex-end;
   gap: 40px;
 }
+
 
 .present__subject {
   font-weight: 900;
@@ -95,19 +97,21 @@
   background: var(--border-color,#640AA3);
 }
 
-.present__down {
+.down {
   display: block;
   z-index: 2;
   align-self: center;
   position: relative;
+  width: 97px;
+  height: 97px;
+  margin-bottom: 55px;
 }
 
 .down__link {
   position: absolute;
   top: -35px;
-  left: -51px;
-  width: 97px;
-  height: 97px;
+  width: 100%;
+  height: 100%;
   background-image: url("../img/present/link-down.svg") ;
   background-repeat: no-repeat;
   background-position: center;
@@ -131,3 +135,196 @@
 
 
 
+@media (max-width: 1200px) {
+  .present{
+    padding-top: 0;
+    padding-bottom: 48px;
+  }
+  .present__caption {
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+
+  .present__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .present__container:after {
+    width: 453px;
+    height: 520px;
+    right:60px;
+  }
+
+  .present__box {
+    gap: 80px;
+
+  }
+
+  .present__list {
+    max-width: 348px;
+    gap: 43px;
+  }
+
+  .present__text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .present__subject_size {
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .present__subject_style {
+    align-self: start;
+    font-size: 60px;
+    line-height: 85px;
+  }
+
+  .present__booking {
+    justify-self: center;
+    max-width: 296px;
+    padding: 17px 48px;
+    font-size: 22px;
+    line-height: 30px;
+    margin-left: 39px;
+  }
+
+  .down {
+    width: 67px;
+    height: 67px;
+    margin-bottom: 0;
+  }
+
+  .down__link {
+    top: -46px;
+  }
+}
+
+@media (max-width: 768px) {
+  .present {
+    padding-bottom: 45px;
+  }
+
+  .present__caption {
+    font-size: 86px;
+  }
+  .present__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 50px;
+    padding-left: 70px;
+  }
+  .present__container:after {
+    width: 409px;
+    height: 479px;
+    right:43px;
+  }
+
+  .present__box {
+    gap: 100px;
+    margin-bottom: 104px;
+  }
+
+  .present__list {
+    max-width: 221px;
+    gap: 30px;
+  }
+
+  .present__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .present__subject_size {
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .present__subject_style {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .present__booking {
+    max-width: 214px;
+    padding: 11px 35px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    border-radius: 4px;
+  }
+
+  .down {
+  display: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .present {
+   padding-bottom: 31px;
+  }
+
+  .present__caption {
+    font-size: 35px;
+    letter-spacing: -0.08em;
+    margin-bottom: 6px;
+  }
+  .present__subtitle {
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+  }
+  .present__container:after {
+    width: 161px;
+    height: 179px;
+    right:20px;
+  }
+
+  .present__box {
+    gap: 30px;
+    margin-bottom: 23px;
+  }
+
+  .present__list {
+    max-width: 119px;
+    gap: 20px;
+  }
+
+  .present__text {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .present__subject_size {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .present__subject_style {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .present__booking {
+    max-width: 117px;
+    padding: 8px 13px 7px 13px;
+    font-size: 10px;
+    line-height: 12px;
+
+  }
+
+
+
+
+
+
+
+
+
+}

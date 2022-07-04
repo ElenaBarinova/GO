@@ -36,8 +36,12 @@
   justify-content: space-between;
 }
 
+.fieldset-hall__label {
+  flex-basis: calc(100% / var(--cart-count) - (var(--gap) * (var(--cart-count) - 1)) / var(--cart-count));
+}
+
 .fieldset-hall__span {
-  width: 250px;
+  width: 100%;
   display: block;
   font-weight: 700;
   font-size: 30px;
@@ -93,7 +97,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 100px 0 100px;
+  padding: 0 100px;
 
 }
 
@@ -121,7 +125,7 @@
 .fun__label {
   display: block;
   position: relative;
-  margin-left: 39px
+  padding-left: 39px
 
 }
 .fun__input {
@@ -129,7 +133,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
 }
 
 .fun__input:before {
@@ -146,7 +149,6 @@
   transition-delay: 0.8s;
   transition-timing-function:linear;
 }
-
 
 .fun__input:focus:before {
   border: 1px solid var(--two-color,#CD06FF);
@@ -187,8 +189,14 @@
   line-height: 16px;
 }
 
+.column__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .reserving__column {
-  width: 300px;
+  flex-basis: 300px;
   display: flex;
   flex-direction: column;
   row-gap: 14px;
@@ -199,8 +207,8 @@
   margin-bottom: 4px;
 }
 
-.colum2 {
-  width: 280px;
+.reserving__colum-2 {
+  flex-basis: 280px;
 }
 
 .column__label{
@@ -209,6 +217,7 @@
 
 .column__label_width {
   width: 134px;
+  flex-basis: 134px;
 }
 
 .reserving__input {
@@ -223,6 +232,7 @@
 .reserving__input:hover,.reserving__input:active{
   background: #FFFFFF;
 }
+
 .reserving__input:focus {
   border: 2px solid var(--two-color,#CD06FF);
 }
@@ -230,7 +240,6 @@
 .form__box {
   padding: 0 100px;
   align-self: flex-end;
-
 }
 
 .form__btn {
@@ -251,7 +260,7 @@
 }
 
 .form__btn:hover {
-  padding: 13px 46px;
+  padding: 13px 47px;
   background: #EADEED;
   border-width: 3px;
   border-style: solid;
@@ -259,7 +268,7 @@
 }
 
 .form__btn:focus {
-  padding: 13px 46px;
+  padding: 13px 47px;
   background: #FFFFFF;
   border-width: 3px;
   border-style: solid;
@@ -272,12 +281,272 @@
   border: none;
 }
 
-.column__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+
+@media (max-width: 1200px) {
+  .container_bgc {
+    padding-top:60px;
+    padding-bottom: 60px;
+  }
+
+  .booking__caption {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+
+  .form__legend {
+    margin-bottom: 26px;
+  }
+
+  .fieldset-hall__span {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 0 ;
+  }
+
+  .fun {
+    padding: 0;
+  }
+
+  .reserving {
+    padding: 0;
+  }
+
+  .reserving__colum-2 {
+    flex-basis: 251px;
+
+  }
+
+  .reserving__colum-3 {
+    flex-basis: 254px;
+  }
+
+  .form__box {
+    padding: 0;
+  }
+
+  .form__btn {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 13px 45px;
+  }
+
+  .form__btn:hover {
+    padding: 10px 42px;
+  }
+
+  .form__btn:focus {
+    padding: 10px 42px;
+  }
+
+  .form__btn:active {
+    padding: 13px 45px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .container_bgc {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .booking__caption {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+
+  .form__legend {
+    margin-bottom: 30px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 50px;
+  }
+
+  .fieldset-hall__span {
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 0 ;
+  }
+
+  .fun {
+    flex-wrap: wrap;
+    row-gap: 32px;
+  }
+
+  .fun__fieldset {
+    width: 50%;
+    gap: 35px;
+  }
+  .fun__label {
+    padding-left: 60px
+
+  }
+
+  .fun__input:before {
+    width: 40px;
+    height: 40px;
+    top: -9px;
+    left: -60px;
+  }
+
+  .reserving {
+    flex-wrap: wrap;
+    row-gap: 42px;
+  }
+
+  .reserving__colum-1 {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .column__container {
+    flex-basis: 280px;
+  }
+
+  .column__label-people {
+    flex-basis: 300px;
+  }
+
+  .reserving__colum-2 {
+    flex-basis: 280px;
+  }
+
+  .reserving__colum-3 {
+    flex-basis: 300px;
+  }
+
+  .form__btn {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 16px 50px;
+  }
+
+  .form__btn:hover {
+    padding: 13px 47px;
+  }
+
+  .form__btn:focus {
+    padding: 13px 47px;
+  }
+
+  .form__btn:active {
+    padding: 16px 50px;
+  }
 }
 
 
+@media (max-width: 480px) {
+  .container_bgc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
+  .booking__caption {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
 
+  .form__legend {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 30px;
+  }
+
+  .fieldset-hall {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .fieldset-hall__span {
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 6px 0 ;
+  }
+
+  .fun {
+    flex-wrap: wrap;
+  }
+
+  .fun__fieldset {
+    width: 100%;
+    gap: 29px;
+  }
+
+  .fun__label {
+    padding-left: 50px
+  }
+
+  .fun__input:before {
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    left: -50px;
+  }
+
+  .reserving {
+    flex-wrap: wrap;
+    row-gap: 35px;
+  }
+
+  .reserving__colum-1 {
+    flex-wrap: wrap;
+    row-gap: 0;
+    column-gap: 12px;
+  }
+
+  .column__container {
+    flex-basis: 100%;
+  }
+
+  .column__label-people {
+    flex-basis: 100%;
+  }
+
+  .reserving__colum-2 {
+    flex-basis: 100%;
+  }
+
+  .reserving__colum-3 {
+    flex-basis: 100%;
+  }
+
+  .form__box {
+    width: 100%;
+  }
+
+  .form__btn {
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 17px 0;
+    border-radius: 4px;
+  }
+
+  .form__btn:hover {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .form__btn:focus {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .form__btn:active {
+    padding: 17px 0;
+  }
+
+}

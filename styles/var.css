@@ -17,3 +17,49 @@
   --cart-count: 2;
   --gap: 20px;
 }
+
+.booking {
+  --cart-count: 4;
+  --gap: 60px;
+
+}
+
+
+@media (max-width: 1200px) {
+
+  .services {
+    --cart-count: 3;
+    --gap: 22px;
+    --height-cart: 172px ;
+  }
+
+  .booking {
+    --cart-count: 4;
+    --gap: 29px;
+  }
+
+
+
+}
+
+@media (max-width: 768px)  {
+  .services {
+    --cart-count: 2;
+    --gap: 20px;
+    --height-cart: 200px ;
+  }
+}
+
+@media (max-width: 320px)  {
+  .services {
+    --cart-count: 2;
+    --gap: 10px;
+    --height-cart: 75px ;
+  }
+
+  .booking {
+    --cart-count: 2;
+    --gap: 20px;
+  }
+}
+
