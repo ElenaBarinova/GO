@@ -47,6 +47,17 @@
   margin-bottom: 10px;
 }
 
+.contact__item-phone, .contact__item-mail {
+  transition-property: color;
+  transition-duration: 0.4s;
+  transition-delay: 0.07s;
+  transition-timing-function: linear;
+}
+
+.contact__item-phone:hover, .contact__item-mail:hover {
+  color: var(--two-color, #CD06FF);
+}
+
 .contact__item-phone:before {
   width: 32px;
   height: 32px;
@@ -111,6 +122,14 @@
 
 .design__link {
   text-align: end;
+  transition-property: color;
+  transition-duration: 0.4s;
+  transition-delay: 0.07s;
+  transition-timing-function: linear;
+}
+
+.design__link:hover {
+  color: var(--two-color, #CD06FF);
 }
 
 .design__name {

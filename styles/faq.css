@@ -19,6 +19,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  cursor:pointer;
+  animation-timing-function: linear;
+  transition-duration: 0.5s;
 }
 
 .faq__item:last-child {
@@ -28,6 +31,10 @@
 .faq__item:nth-child(2n) {
   background-color: var(--bg-color,#440F51);
   color: white;
+}
+
+.faq__item:hover {
+  transform: scale(1.1);
 }
 
 .faq__link {
